@@ -1,0 +1,100 @@
+.tasks-container {
+  padding: 30px;
+  color: var(--text-primary);
+}
+
+.tasks-title {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+/* Input Section */
+
+.task-input-section {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.task-input {
+  flex: 1;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid var(--border-soft);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.task-input:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+}
+
+.add-task-btn {
+  padding: 12px 18px;
+  background: var(--accent-primary);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.add-task-btn:hover {
+  opacity: 0.9;
+}
+
+/* Task List */
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.task-card {
+  background: var(--bg-secondary);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid var(--border-soft);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.task-title {
+  font-size: 16px;
+}
+
+.task-title.completed {
+  text-decoration: line-through;
+  color: var(--text-secondary);
+}
+
+/* Priority */
+
+.priority {
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.priority.high {
+  background: #ff6b6b33;
+  color: #ff6b6b;
+}
+
+.priority.medium {
+  background: #ffd93d33;
+  color: #ffd93d;
+}
+
+.priority.low {
+  background: #6bcf6b33;
+  color: #6bcf6b;
+}

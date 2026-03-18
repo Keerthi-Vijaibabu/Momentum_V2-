@@ -1,0 +1,67 @@
+.calendar-page {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+  height: calc(100vh - 70px);
+}
+
+.task-panel {
+  width: 280px;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.task-panel h2 {
+  margin-bottom: 15px;
+}
+
+.task-card {
+  background: var(--color-3);
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: grab;
+  color: var(--text-primary);
+}
+
+.task-card:hover {
+  background: var(--color-4);
+}
+
+
+h2 {
+  color: var(--text-primary);
+}
+
+/* For Styling the calendar  */
+
+.calendar-panel {
+  flex: 1;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+/* Month view specific styles */
+
+.rbc-calendar {
+  background: transparent;
+  color: var(--text-primary);
+}
+
+.rbc-today{
+  background: var(--color-3) !important;
+}
+
+.rbc-toolbar {
+  color: var(--text-primary);
+}
+
+.rbc-off-range-bg {
+  background: var(--color-1) !important;
+}
+.rbc-day-bg:hover {
+  background: var(--color-4) !important;
+}
+

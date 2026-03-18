@@ -1,0 +1,45 @@
+:root {
+
+  /* Backgrounds */
+  --bg: #0b0620;
+  --bg-secondary: #15112d;
+
+  /* Palette from moodboard */
+  --color-1: #2f3a5a;   /* dark blue */
+  --color-2: #56639b;   /* muted indigo */
+  --color-3: #7b5679;   /* dusty purple */
+  --color-4: #a99ad4;   /* soft lavender */
+  --color-5: #d9c2c6;   /* pale blush */
+
+  /* UI text */
+  --text-primary: #f5f3ff;
+  --text-secondary: #1c1734;
+
+  /* Accent */
+  --accent-primary: #d9c2c6;
+  --accent-glow: #a855f7;
+
+  /* Borders */
+  --border-soft: rgba(255,255,255,0.08);
+
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
