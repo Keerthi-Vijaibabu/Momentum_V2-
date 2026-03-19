@@ -1,18 +1,7 @@
+import TaskList from "../components/TaskList";
 import "./Dashboard.css";
 
 function Dashboard() {
-  const todayTasks = [
-    { id: 1, title: "Design landing page", time: "9:00 AM", completed: true },
-    {
-      id: 2,
-      title: "Finish React dashboard UI",
-      time: "11:00 AM",
-      completed: true,
-    },
-    { id: 3, title: "Workout", time: "5:30 PM", completed: false },
-    { id: 4, title: "Read 20 pages", time: "8:00 PM", completed: false },
-  ];
-
   const weeklyProgress = 68;
 
   const productivityData = [
@@ -35,54 +24,38 @@ function Dashboard() {
       </div>
 
       <div className="dashboard-grid">
-        <section className="card tasks-card">
-          <div className="card-header">
-            <h2>Today's Tasks</h2>
-            <span className="card-badge">{todayTasks.length} tasks</span>
-          </div>
-
-          <div className="tasks-list">
-            {todayTasks.map((task) => (
-              <div key={task.id} className="task-item">
-                <div className="task-left">
-                  <div
-                    className={`task-status ${
-                      task.completed ? "completed" : "pending"
-                    }`}
-                  />
-                  <div>
-                    <h3>{task.title}</h3>
-                    <p>{task.time}</p>
-                  </div>
-                </div>
-                <span className={task.completed ? "done-text" : "pending-text"}>
-                  {task.completed ? "Done" : "Pending"}
-                </span>
-              </div>
-            ))}
-          </div>
-        </section>
+        <TaskList />
 
         <section className="card progress-card">
-          <div className="card-header">
-            <h2>Weekly Progress</h2>
-            <span className="card-badge">{weeklyProgress}%</span>
+          <div className="card progress-card progressalone">
+            <div className="card-header">
+              <h2>Weekly Progress</h2>
+              <span className="card-badge">{weeklyProgress}%</span>
+            </div>
+
+            <p className="card-subtext">
+              You’ve completed most of your weekly goals. Keep the momentum
+              going.
+            </p>
+
+            <div className="progress-bar">
+              <div
+                className="progress-fill"
+                style={{ width: `${weeklyProgress}%` }}
+              />
+            </div>
+
+            <div className="progress-meta">
+              <span>0%</span>
+              <span>100%</span>
+            </div>
           </div>
 
-          <p className="card-subtext">
-            You’ve completed most of your weekly goals. Keep the momentum going.
-          </p>
+          <br></br>
 
-          <div className="progress-bar">
-            <div
-              className="progress-fill"
-              style={{ width: `${weeklyProgress}%` }}
-            />
-          </div>
-
-          <div className="progress-meta">
-            <span>0%</span>
-            <span>100%</span>
+          <div className="card progress-card">
+            <h3>Upcoming Events</h3>
+            <p>No events scheduled for the next 7 days.</p>
           </div>
         </section>
 

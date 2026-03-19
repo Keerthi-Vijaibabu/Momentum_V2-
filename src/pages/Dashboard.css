@@ -40,6 +40,10 @@
   min-height: 220px;
 }
 
+.progress-card .progressalone {
+  height: 25%;
+}
+
 .chart-card,
 .stats-card {
   grid-column: span 1;
@@ -75,62 +79,6 @@
   line-height: 1.5;
 }
 
-.tasks-list {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.task-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.04);
-  padding: 14px 16px;
-  border-radius: 16px;
-}
-
-.task-left {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.task-left h3 {
-  margin: 0;
-  font-size: 1rem;
-}
-
-.task-left p {
-  margin: 4px 0 0;
-  font-size: 0.85rem;
-  color: #a9a2cc;
-}
-
-.task-status {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-}
-
-.task-status.completed {
-  background: #8b5cf6;
-  box-shadow: 0 0 10px rgba(139, 92, 246, 0.7);
-}
-
-.task-status.pending {
-  background: #5b5675;
-}
-
-.done-text {
-  color: #c4b5fd;
-  font-size: 0.9rem;
-}
-
-.pending-text {
-  color: #8e88b5;
-  font-size: 0.9rem;
-}
 
 .progress-bar {
   width: 100%;
